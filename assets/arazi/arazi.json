@@ -1,0 +1,421 @@
+{
+ "sur": {
+  "n": 651,
+  "adim": 8,
+  "yari": 2600,
+  "taban": 571,
+  "olcek": 0.25,
+  "enAz": 572.9,
+  "enCok": 711.6,
+  "png": "sur",
+  "ad": "Sur",
+  "lat": 37.9111,
+  "lon": 40.2366,
+  "palet": "sehir",
+  "nokta": {
+   "sur": [
+    0.0,
+    -0.0
+   ],
+   "baglar": [
+    -2485.5,
+    -690.2
+   ]
+  }
+ },
+ "semdinli": {
+  "n": 701,
+  "adim": 20,
+  "yari": 7000,
+  "taban": 1101,
+  "olcek": 0.25,
+  "enAz": 1102.3,
+  "enCok": 2744.1,
+  "png": "semdinli",
+  "ad": "Şemdinli",
+  "lat": 37.3068,
+  "lon": 44.5725,
+  "palet": "dag",
+  "nokta": {
+   "kasaba": [
+    0.0,
+    -0.0
+   ],
+   "dolampar": [
+    -28776.8,
+    -1046.4
+   ],
+   "beyaz": [
+    -7358.0,
+    -1959.2
+   ],
+   "efkar": [
+    -9022.6,
+    -3885.1
+   ],
+   "aslan": [
+    -13998.8,
+    -4920.3
+   ]
+  }
+ },
+ "daglica": {
+  "n": 701,
+  "adim": 20,
+  "yari": 7000,
+  "taban": 887,
+  "olcek": 0.25,
+  "enAz": 888.2,
+  "enCok": 3285.7,
+  "png": "daglica",
+  "ad": "Dağlıca",
+  "lat": 37.3733,
+  "lon": 44.0866,
+  "palet": "dag",
+  "nokta": {
+   "us": [
+    0.0,
+    -0.0
+   ],
+   "izme": [
+    -11164.4,
+    2304.3
+   ],
+   "gebri": [
+    -20577.1,
+    -467.5
+   ]
+  }
+ },
+ "cukurca": {
+  "n": 701,
+  "adim": 20,
+  "yari": 7000,
+  "taban": 715,
+  "olcek": 0.25,
+  "enAz": 716.3,
+  "enCok": 2120.3,
+  "png": "cukurca",
+  "ad": "Çukurca",
+  "lat": 37.2468,
+  "lon": 43.611,
+  "palet": "dag",
+  "nokta": {
+   "ilce": [
+    0.0,
+    -0.0
+   ]
+  }
+ },
+ "zap": {
+  "n": 801,
+  "adim": 20,
+  "yari": 8000,
+  "taban": 806,
+  "olcek": 0.25,
+  "enAz": 807.9,
+  "enCok": 3074.1,
+  "png": "zap",
+  "ad": "Zap",
+  "lat": 37.31,
+  "lon": 43.46,
+  "palet": "dag",
+  "nokta": {
+   "zapsuyu": [
+    5817.1,
+    -9618.0
+   ],
+   "zinara": [
+    -22746.0,
+    2527.0
+   ]
+  }
+ },
+ "zapkis": {
+  "n": 801,
+  "adim": 20,
+  "yari": 8000,
+  "taban": 806,
+  "olcek": 0.25,
+  "enAz": 807.9,
+  "enCok": 3074.1,
+  "png": "zap",
+  "ad": "Zap (kış)",
+  "lat": 37.31,
+  "lon": 43.46,
+  "palet": "kar",
+  "nokta": {
+   "zapsuyu": [
+    5817.1,
+    -9618.0
+   ],
+   "zinara": [
+    -22746.0,
+    2527.0
+   ]
+  }
+ },
+ "metina": {
+  "n": 801,
+  "adim": 20,
+  "yari": 8000,
+  "taban": 691,
+  "olcek": 0.25,
+  "enAz": 692.3,
+  "enCok": 2071.9,
+  "png": "metina",
+  "ad": "Metina",
+  "lat": 37.1409,
+  "lon": 43.2529,
+  "palet": "dag",
+  "nokta": {
+   "metina": [
+    0.0,
+    -0.0
+   ],
+   "barozh": [
+    -14056.3,
+    -20861.4
+   ]
+  }
+ },
+ "avasin": {
+  "n": 801,
+  "adim": 20,
+  "yari": 8000,
+  "taban": 603,
+  "olcek": 0.25,
+  "enAz": 604.7,
+  "enCok": 2243.8,
+  "png": "avasin",
+  "ad": "Avaşin-Basyan",
+  "lat": 37.12,
+  "lon": 43.65,
+  "palet": "dag",
+  "nokta": {
+   "linik": [
+    7642.5,
+    3406.4
+   ]
+  }
+ },
+ "hakurk": {
+  "n": 801,
+  "adim": 20,
+  "yari": 8000,
+  "taban": 497,
+  "olcek": 0.25,
+  "enAz": 498.1,
+  "enCok": 2029.8,
+  "png": "hakurk",
+  "ad": "Hakurk",
+  "lat": 36.89,
+  "lon": 44.32,
+  "palet": "dag",
+  "nokta": {
+   "guney": [
+    -6259.0,
+    -15607.1
+   ]
+  }
+ },
+ "cudi": {
+  "n": 701,
+  "adim": 20,
+  "yari": 7000,
+  "taban": 535,
+  "olcek": 0.25,
+  "enAz": 536.5,
+  "enCok": 2098.6,
+  "png": "cudi",
+  "ad": "Cudi Dağı",
+  "lat": 37.3775,
+  "lon": 42.4543,
+  "palet": "dag",
+  "nokta": {
+   "zirve": [
+    0.0,
+    -0.0
+   ]
+  }
+ },
+ "gabar": {
+  "n": 701,
+  "adim": 20,
+  "yari": 7000,
+  "taban": 671,
+  "olcek": 0.25,
+  "enAz": 672.7,
+  "enCok": 1830.5,
+  "png": "gabar",
+  "ad": "Gabar Dağı",
+  "lat": 37.55,
+  "lon": 42.1,
+  "palet": "dag",
+  "nokta": {}
+ },
+ "kato": {
+  "n": 701,
+  "adim": 20,
+  "yari": 7000,
+  "taban": 1182,
+  "olcek": 0.25,
+  "enAz": 1183.3,
+  "enCok": 2997.7,
+  "png": "kato",
+  "ad": "Kato Dağı",
+  "lat": 37.5787,
+  "lon": 43.0419,
+  "palet": "dag",
+  "nokta": {
+   "zirve": [
+    0.0,
+    -0.0
+   ]
+  }
+ },
+ "afrin": {
+  "n": 701,
+  "adim": 20,
+  "yari": 7000,
+  "taban": 199,
+  "olcek": 0.25,
+  "enAz": 200.1,
+  "enCok": 652.7,
+  "png": "afrin",
+  "ad": "Afrin",
+  "lat": 36.5084,
+  "lon": 36.8701,
+  "palet": "ege",
+  "nokta": {
+   "afrin": [
+    0.0,
+    -0.0
+   ]
+  }
+ },
+ "resulayn": {
+  "n": 601,
+  "adim": 20,
+  "yari": 6000,
+  "taban": 343,
+  "olcek": 0.25,
+  "enAz": 344.3,
+  "enCok": 464.5,
+  "png": "resulayn",
+  "ad": "Resulayn",
+  "lat": 36.847,
+  "lon": 40.06,
+  "palet": "bozkir",
+  "nokta": {
+   "ceylanpinar": [
+    -766.1,
+    411.9
+   ],
+   "resulayn": [
+    855.2,
+    -378.5
+   ]
+  }
+ },
+ "telabyad": {
+  "n": 601,
+  "adim": 20,
+  "yari": 6000,
+  "taban": 330,
+  "olcek": 0.25,
+  "enAz": 331.9,
+  "enCok": 392.2,
+  "png": "telabyad",
+  "ad": "Tel Abyad",
+  "lat": 36.701,
+  "lon": 38.949,
+  "palet": "bozkir",
+  "nokta": {
+   "akcakale": [
+    -26.8,
+    -812.6
+   ],
+   "telabyad": [
+    89.3,
+    712.4
+   ]
+  }
+ },
+ "cerablus": {
+  "n": 651,
+  "adim": 20,
+  "yari": 6500,
+  "taban": 321,
+  "olcek": 0.25,
+  "enAz": 322.8,
+  "enCok": 505.4,
+  "png": "cerablus",
+  "ad": "Cerablus",
+  "lat": 36.816,
+  "lon": 38.013,
+  "palet": "bozkir",
+  "nokta": {
+   "karkamis": [
+    -1158.5,
+    -1680.9
+   ],
+   "cerablus": [
+    1256.6,
+    1770.0
+   ]
+  }
+ },
+ "elbab": {
+  "n": 601,
+  "adim": 20,
+  "yari": 6000,
+  "taban": 420,
+  "olcek": 0.25,
+  "enAz": 421.7,
+  "enCok": 551.6,
+  "png": "elbab",
+  "ad": "El Bab",
+  "lat": 36.3711,
+  "lon": 37.5144,
+  "palet": "bozkir",
+  "nokta": {
+   "elbab": [
+    0.0,
+    -0.0
+   ]
+  }
+ },
+ "bursaya": {
+  "n": 901,
+  "adim": 20,
+  "yari": 9000,
+  "taban": 345,
+  "olcek": 0.25,
+  "enAz": 346.6,
+  "enCok": 1256.6,
+  "png": "bursaya",
+  "ad": "Bursaya",
+  "lat": 36.72,
+  "lon": 36.78,
+  "palet": "ege",
+  "nokta": {
+   "bursaya": [
+    1784.6,
+    3339.6
+   ],
+   "raco": [
+    -8378.7,
+    -2749.6
+   ],
+   "sinir": [
+    0.0,
+    -5566.0
+   ],
+   "darmik": [
+    2534.1,
+    -8282.2
+   ]
+  }
+ }
+}
