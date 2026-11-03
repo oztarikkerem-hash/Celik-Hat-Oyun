@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600;700&family=Share+Tech+Mono&display=swap">
-<link rel="stylesheet" href="oyun.css?v=2fd4da38aa">
+<link rel="stylesheet" href="oyun.css?v=6c51db3545">
 <script type="importmap">{"imports": {"three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/", "rapier": "./vendor/rapier3d-compat.js"}}</script>
 <link rel="modulepreload" href="./vendor/rapier3d-compat.js">
 </head>
@@ -180,6 +180,11 @@
 <div id="ses-flash" class="ses-flash" aria-hidden="true"></div>
 <div id="kan" class="kan" aria-hidden="true"><div class="kan-nabiz"></div><div class="kan-leke"></div></div>
 <div id="vignette" class="vignette" aria-hidden="true"></div>
+<div id="sualti" class="sualti" aria-hidden="true" hidden></div>
+<div id="nefes" class="nefes" hidden>
+  <span class="nefes-etiket">NEFES</span>
+  <div class="nefes-bar"><span id="nefes-fill"></span></div>
+</div>
 <div id="achv" class="achv" role="status" aria-live="polite" hidden>
   <svg class="achv-medal" viewBox="0 0 40 40" aria-hidden="true">
     <path d="M13 2h6l-3 12h-6zM27 2h-6l3 12h6z" fill="#8a6124"/>
@@ -632,6 +637,6 @@
     </div>
   </div>
 </div>
-<script>(function(){var t="2fd4da38aa";function a(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}a()}).catch(a)})();</script>
+<script>(function(){var t="6c51db3545";function c(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}c()}).catch(c)})();</script>
 </body>
 </html>
