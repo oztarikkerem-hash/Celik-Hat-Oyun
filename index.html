@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600;700&family=Share+Tech+Mono&display=swap">
-<link rel="stylesheet" href="oyun.css?v=512c89d31f">
+<link rel="stylesheet" href="oyun.css?v=2fd4da38aa">
 <script type="importmap">{"imports": {"three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/", "rapier": "./vendor/rapier3d-compat.js"}}</script>
 <link rel="modulepreload" href="./vendor/rapier3d-compat.js">
 </head>
@@ -616,8 +616,8 @@
 </div>
 <div id="gameover" class="overlay gameover" hidden>
   <div class="panel">
-    <span class="eyebrow">HAT DÜŞTÜ</span>
-    <h1>Elendin</h1>
+    <span class="eyebrow" id="go-eyebrow">HAT DÜŞTÜ</span>
+    <h1 id="go-title">Elendin</h1>
     <div class="stat-row">
       <div><span class="label">DALGA</span><strong id="go-wave">1</strong></div>
       <div><span class="label">PUAN</span><strong id="go-score">0</strong></div>
@@ -632,6 +632,6 @@
     </div>
   </div>
 </div>
-<script>(function(){var t="512c89d31f";function c(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}c()}).catch(c)})();</script>
+<script>(function(){var t="2fd4da38aa";function a(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}a()}).catch(a)})();</script>
 </body>
 </html>
