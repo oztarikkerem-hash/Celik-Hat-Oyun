@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600;700&family=Share+Tech+Mono&display=swap">
-<link rel="stylesheet" href="oyun.css?v=4fe59446f2">
+<link rel="stylesheet" href="oyun.css?v=ed154d9bec">
 <script type="importmap">{"imports": {"three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/", "rapier": "./vendor/rapier3d-compat.js"}}</script>
 <link rel="modulepreload" href="./vendor/rapier3d-compat.js">
 </head>
@@ -235,6 +235,13 @@
       <span id="sector-readout" class="sector-readout">SEKTÖR 0 / 0</span>
     </div>
   </header>
+  <div id="pusula" class="pusula" aria-hidden="true">
+    <div class="pusula-pencere"><div id="pusula-serit" class="pusula-serit"></div></div>
+    <span class="pusula-ok"></span>
+    <strong id="pusula-derece" class="pusula-derece">000</strong>
+  </div>
+  <p id="ammo-uyari" class="ammo-uyari" hidden></p>
+  <div id="puan-acilir" class="puan-acilir" aria-hidden="true"></div>
   <div id="mission-tracker" class="mission-tracker">
     <span class="label">GÖREV</span>
     <strong id="mission-name">—</strong>
@@ -269,6 +276,7 @@
         <span class="ammo-sep">/</span>
         <span id="ammo-reserve" class="ammo-reserve">120</span>
       </div>
+      <div id="ammo-pips" class="ammo-pips" aria-hidden="true"></div>
       <div class="weapon-name-row">
         <span id="weapon-name" class="weapon-name">—</span>
         <span id="fire-mode" class="fire-mode">OTO</span>
@@ -322,6 +330,11 @@
           <span class="mi-text"><b>Mağaza</b><small>Yelek, kask, silah, sağlık</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
+        <button id="home-mp-btn" class="menu-item" style="--c:#ef6f5a" type="button">
+          <span class="mi-ico" aria-hidden="true">⚔</span>
+          <span class="mi-text"><b>Çok Oyunculu</b><small>Takım maçı · bölge · ortak savunma — 8 kişi</small></span>
+          <span class="mi-go" aria-hidden="true">›</span>
+        </button>
         <button id="home-help-btn" class="menu-item" style="--c:#5aa9f0" type="button">
           <span class="mi-ico" aria-hidden="true">⌨</span>
           <span class="mi-text"><b>Kontroller</b><small>Tuşlar</small></span>
@@ -368,6 +381,8 @@
         <div><dt>Y</dt><dd>Çift Desert Eagle (mağazadan)</dd></div>
         <div><dt>P</dt><dd>Silahı cebe koy / çıkar (Suikast'ta mesaj gelince telefon)</dd></div>
         <div><dt>Esc</dt><dd>Duraklat</dd></div>
+        <div><dt>Tab</dt><dd>Çok oyunculu: skor tablosu (basılı tut)</dd></div>
+        <div><dt>Enter</dt><dd>Çok oyunculu: sohbet</dd></div>
       </dl>
     </div>
   </div>
@@ -400,6 +415,7 @@
       <ul class="lic-list">
         <li><strong>three.js</strong><span>three.js yazarları</span><em>MIT</em><p>3B çizim motoru.</p></li>
         <li><strong>Rapier</strong><span>Dimforge</span><em>Apache-2.0</em><p>Fizik motoru (ragdoll, eşyalar, bombalar).</p></li>
+        <li><strong>PeerJS</strong><span>Michelle Bu, Eric Zhang ve katkıcılar</span><em>MIT</em><p>Çok oyunculu bağlantı (WebRTC); ilk eşleşme PeerJS'in ücretsiz sinyal sunucusuyla.</p></li>
         <li><strong>Saira Condensed · Share Tech Mono</strong><span>Google Fonts</span><em>SIL OFL 1.1</em><p>Arayüz yazı tipleri.</p></li>
       </ul>
     </section>
@@ -410,6 +426,7 @@
     </div>
   </div>
 </div>
+<div id="mpScreen" class="overlay mp-ekran" hidden></div>
 <div id="missions-screen" class="overlay missions-screen" hidden>
   <div class="home-wrap">
     <header class="home-head compact">
@@ -654,6 +671,6 @@
     </div>
   </div>
 </div>
-<script>(function(){var t="4fe59446f2";function a(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}a()}).catch(a)})();</script>
+<script>(function(){var t="ed154d9bec";function c(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}c()}).catch(c)})();</script>
 </body>
 </html>
