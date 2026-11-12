@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600;700&family=Share+Tech+Mono&display=swap">
-<link rel="stylesheet" href="oyun.css?v=749ce0737b">
+<link rel="stylesheet" href="oyun.css?v=3c70e04531">
 <script type="importmap">{"imports": {"three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/", "rapier": "./vendor/rapier3d-compat.js"}}</script>
 <link rel="modulepreload" href="./vendor/rapier3d-compat.js">
 </head>
@@ -257,6 +257,19 @@
     <strong id="raid-banner-title"></strong>
   </div>
   <p id="interact-hint" class="interact-hint" hidden></p>
+  <section id="at-gosterge" class="at-gosterge" aria-label="At" hidden>
+    <div class="atg-ust">
+      <svg class="ico-at" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5l2 2.6 3 2 3 5V21h-9l1-4.4-4.6-1.1Q4 15 3.3 13 3 11 5 9.5l5-4z"/><circle cx="8.6" cy="9.6" r="1" fill="var(--ink)"/></svg>
+      <strong id="atg-yurus" class="atg-yurus">DUR</strong>
+      <span id="atg-hiz" class="atg-hiz">0 km/sa</span>
+    </div>
+    <ol class="atg-kademe" aria-hidden="true"><li>ADIM</li><li>TIRIS</li><li>DÖRTNAL</li></ol>
+    <div class="atg-soluk">
+      <span class="label">SOLUK</span>
+      <div class="atg-bar"><span id="atg-soluk-dolu"></span></div>
+    </div>
+    <p class="atg-tus"><kbd>W</kbd>ileri <kbd>⇧</kbd>dörtnal <kbd>A</kbd><kbd>D</kbd>dön <kbd>F</kbd>in</p>
+  </section>
   <footer class="hud-bottom">
     <div class="vitals">
       <span class="label">SAĞLIK</span>
@@ -306,42 +319,42 @@
         <p class="lede">On bir silah, bir bıçak, on bir görev, sonu gelmeyen dalgalar. Hattı ne kadar tutabilirsin?</p>
       </header>
       <nav class="home-menu" aria-label="Ana menü">
-        <button id="home-chapters-btn" class="menu-item" style="--c:#3fb8a9" type="button">
-          <span class="mi-ico" aria-hidden="true">▲</span>
+        <button id="home-chapters-btn" class="menu-item" type="button">
+          <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h16v2.5A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5z"/><path d="M8 14v-3h7v3"/><path d="M15 12h6"/><circle cx="8" cy="16.5" r=".6"/><circle cx="12" cy="16.5" r=".6"/><circle cx="16" cy="16.5" r=".6"/></svg></span>
           <span class="mi-text"><b>Bölümler</b><small>Zırhlı birlik · tank görevleri</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
-        <button id="home-kurtulus-btn" class="menu-item" style="--c:#d0453a" type="button">
-          <span class="mi-ico" aria-hidden="true">☾</span>
-          <span class="mi-text"><b>Kurtuluş Savaşı</b><small>Sakarya Meydan Muharebesi · 1921</small></span>
+        <button id="home-kurtulus-btn" class="menu-item featured" type="button">
+          <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M11 4.6a7.4 7.4 0 1 0 0 14.8 7.4 7.4 0 1 0 0-14.8zm1.8 1.8a5.6 5.6 0 1 0 0 11.2 5.6 5.6 0 1 0 0-11.2z"/><path fill="currentColor" d="M15.6 12l2.5.8 1.5-2.1v2.6l2.5.8-2.5.8v2.6l-1.5-2.1-2.5.8 1.6-2.1z"/></svg></span>
+          <span class="mi-text"><b>Kurtuluş Savaşı</b><small>Sakarya · Büyük Taarruz · Terörle Mücadele</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
-        <button id="home-missions-btn" class="menu-item" style="--c:#e8a33d" type="button">
-          <span class="mi-ico" aria-hidden="true">◆</span>
+        <button id="home-missions-btn" class="menu-item" type="button">
+          <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.2"/><path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4"/></svg></span>
           <span class="mi-text"><b>Görevler</b><small>Bitenleri tekrar oynayabilirsin</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
-        <button id="home-free-btn" class="menu-item" style="--c:#7bc96f" type="button">
-          <span class="mi-ico" aria-hidden="true">●</span>
+        <button id="home-free-btn" class="menu-item" type="button">
+          <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9c3-3 6 3 9 0s6 3 9 0"/><path d="M3 15c3-3 6 3 9 0s6 3 9 0"/></svg></span>
           <span class="mi-text"><b>Serbest hat</b><small>Sonsuz dalga</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
-        <button id="home-shop-btn" class="menu-item" style="--c:#b58cf5" type="button">
-          <span class="mi-ico" aria-hidden="true">■</span>
+        <button id="home-shop-btn" class="menu-item" type="button">
+          <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="12" rx="1"/><path d="M4 11h16M10 11v3h4v-3M8 7V5h8v2"/></svg></span>
           <span class="mi-text"><b>Mağaza</b><small>Yelek, kask, silah, sağlık</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
-        <button id="home-mp-btn" class="menu-item" style="--c:#ef6f5a" type="button">
-          <span class="mi-ico" aria-hidden="true">⚔</span>
+        <button id="home-mp-btn" class="menu-item" type="button">
+          <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c0-3.2 2.4-5.6 5.5-5.6s5.5 2.4 5.5 5.6"/><circle cx="17" cy="9" r="2.3"/><path d="M15.8 13.6c2.6.1 4.7 2.2 4.7 5"/></svg></span>
           <span class="mi-text"><b>Çok Oyunculu</b><small>Takım maçı · bölge · ortak savunma — 8 kişi</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
-        <button id="home-help-btn" class="menu-item" style="--c:#5aa9f0" type="button">
-          <span class="mi-ico" aria-hidden="true">⌨</span>
+        <button id="home-help-btn" class="menu-item" type="button">
+          <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 10.5h.01M10.3 10.5h.01M13.7 10.5h.01M17 10.5h.01M8 14h8"/></svg></span>
           <span class="mi-text"><b>Kontroller</b><small>Tuşlar</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
-        <button class="menu-item sound-btn" style="--c:#9aa596" type="button" aria-pressed="false">Ses: Açık</button>
+        <button class="menu-item sound-btn" type="button" aria-pressed="false">Ses: Açık</button>
       </nav>
       <div class="home-stats">
         <div><span class="label">EN İYİ PUAN</span><strong id="home-best">0</strong></div>
@@ -672,6 +685,6 @@
     </div>
   </div>
 </div>
-<script>(function(){var t="749ce0737b";function c(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}c()}).catch(c)})();</script>
+<script>(function(){var t="3c70e04531";function c(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}c()}).catch(c)})();</script>
 </body>
 </html>
