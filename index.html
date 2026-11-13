@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Rye&family=Saira+Condensed:wght@400;600;700&family=Share+Tech+Mono&display=swap">
-<link rel="stylesheet" href="oyun.css?v=717986f07b">
+<link rel="stylesheet" href="oyun.css?v=3643c2cc8b">
 <script type="importmap">{"imports": {"three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/", "rapier": "./vendor/rapier3d-compat.js"}}</script>
 <link rel="modulepreload" href="./vendor/rapier3d-compat.js">
 </head>
@@ -327,6 +327,11 @@
         <button id="home-kurtulus-btn" class="menu-item featured" type="button">
           <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M11 4.6a7.4 7.4 0 1 0 0 14.8 7.4 7.4 0 1 0 0-14.8zm1.8 1.8a5.6 5.6 0 1 0 0 11.2 5.6 5.6 0 1 0 0-11.2z"/><path fill="currentColor" d="M15.6 12l2.5.8 1.5-2.1v2.6l2.5.8-2.5.8v2.6l-1.5-2.1-2.5.8 1.6-2.1z"/></svg></span>
           <span class="mi-text"><b>Kurtuluş Savaşı</b><small>Sakarya · Büyük Taarruz · Terörle Mücadele</small></span>
+          <span class="mi-go" aria-hidden="true">›</span>
+        </button>
+        <button id="home-acik-btn" class="menu-item featured" type="button">
+          <span class="mi-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M5 15V9l3-2 3 2v6"/><path d="M13 15V6l4-2 2 2v9"/></svg></span>
+          <span class="mi-text"><b>Açık Dünya</b><small>İki adalı şehir · devriye, suçlu kovalama</small></span>
           <span class="mi-go" aria-hidden="true">›</span>
         </button>
         <button id="home-missions-btn" class="menu-item" type="button">
@@ -686,6 +691,6 @@
     </div>
   </div>
 </div>
-<script>(function(){var t="717986f07b";function o(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}o()}).catch(o)})();</script>
+<script>(function(){var t="3643c2cc8b";function c(){var e=document.createElement("script");e.type="module",e.src="oyun.js?v="+t,document.body.appendChild(e)}fetch("version.json?t="+Date.now(),{cache:"no-store"}).then(function(e){return e.ok?e.json():null}).then(function(e){if(e&&e.build&&e.build!==t){var n=new URL(location.href);if(n.searchParams.get("v")!==e.build){n.searchParams.set("v",e.build),location.replace(n.href);return}}c()}).catch(c)})();</script>
 </body>
 </html>
