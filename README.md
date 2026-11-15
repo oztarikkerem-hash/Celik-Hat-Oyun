@@ -1,4 +1,4 @@
-# Çelik Hat
+# Death's Way
 
 **Oyna:** https://oztarikkerem-hash.github.io/Celik-Hat-Oyun/
 
