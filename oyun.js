@@ -34,7 +34,10 @@ void main() {
   if (d >= 0.999999) { gl_FragColor = vec4(1.0); return; }
   vec3 p = viewPos(vUv, d);
   float dist = -p.z;
-  if (dist > 120.0) { gl_FragColor = vec4(1.0); return; }
+  // Eller ve silah (kameraya ~1 m'den yakın): ortam kapatması YOK. Parmak
+  // aralarını ve elin kenarını lekeliyordu (kullanıcı: "ellerin şekli daha
+  // kötü"); Orta kalitede SSAO açılınca ortaya çıktı.
+  if (dist > 120.0 || dist < 1.0) { gl_FragColor = vec4(1.0); return; }
   vec2 px = 1.0 / uDepthRes;
   vec3 pr = viewPos(vUv + vec2(px.x, 0.0), texture2D(tDepth, vUv + vec2(px.x, 0.0)).x);
   vec3 pl = viewPos(vUv - vec2(px.x, 0.0), texture2D(tDepth, vUv - vec2(px.x, 0.0)).x);
@@ -59,6 +62,8 @@ void main() {
     vec2 suv = o.xy / o.w * 0.5 + 0.5;
     if (suv.x < 0.0 || suv.y < 0.0 || suv.x > 1.0 || suv.y > 1.0) continue;
     float sz = viewZ(texture2D(tDepth, suv).x);
+    // Önündeki el/silah arkadaki yüzeye gölge halesi düşürmesin
+    if (-sz < 1.0) continue;
     float range = smoothstep(0.0, 1.0, radius / max(abs(p.z - sz), 1e-4));
     occ += (sz >= s.z + 0.025 * radius + dist * 0.0025 ? 1.0 : 0.0) * range;
   }
