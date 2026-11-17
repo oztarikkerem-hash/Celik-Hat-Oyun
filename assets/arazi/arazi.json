@@ -417,5 +417,93 @@
     -8282.2
    ]
   }
+ },
+ "berlin": {
+  "n": 601,
+  "adim": 8,
+  "yari": 2400,
+  "taban": 22,
+  "olcek": 0.25,
+  "enAz": 23.7,
+  "enCok": 59.8,
+  "png": "berlin",
+  "ad": "Berlin",
+  "lat": 52.5135,
+  "lon": 13.366,
+  "palet": "metropol",
+  "nokta": {
+   "kanzleramt": [
+    210.0,
+    -745.8
+   ],
+   "bendlerblock": [
+    -345.5,
+    712.4
+   ],
+   "reichstag": [
+    684.2,
+    -578.9
+   ],
+   "ard": [
+    1023.0,
+    -590.0
+   ],
+   "siegessaule": [
+    -1077.2,
+    -111.3
+   ],
+   "moabit": [
+    -1083.9,
+    -1168.9
+   ]
+  }
+ },
+ "saar": {
+  "n": 917,
+  "adim": 12,
+  "yari": 5500,
+  "taban": 162,
+  "olcek": 0.25,
+  "enAz": 163.1,
+  "enCok": 398.8,
+  "png": "saar",
+  "ad": "Saarbrücken – Forbach",
+  "lat": 49.205,
+  "lon": 6.955,
+  "palet": "avrupa",
+  "nokta": {
+   "bremm": [
+    276.4,
+    33.4
+   ],
+   "spicheren_sirt": [
+    916.4,
+    423.0
+   ],
+   "spicheren": [
+    931.0,
+    1402.6
+   ],
+   "stiring": [
+    -1985.6,
+    434.1
+   ],
+   "schoeneck": [
+    -2247.4,
+    -1747.7
+   ],
+   "alsting": [
+    3302.0,
+    2860.9
+   ],
+   "forbach": [
+    -4298.4,
+    2081.7
+   ],
+   "saarbrucken": [
+    2603.8,
+    -4029.8
+   ]
+  }
  }
 }
