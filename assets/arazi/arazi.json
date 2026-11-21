@@ -505,5 +505,177 @@
     -4029.8
    ]
   }
+ },
+ "verdun": {
+  "n": 834,
+  "adim": 12,
+  "yari": 5000,
+  "taban": 184,
+  "olcek": 0.25,
+  "enAz": 185.7,
+  "enCok": 390.0,
+  "png": "verdun",
+  "ad": "Verdun – Douaumont",
+  "lat": 49.205,
+  "lon": 5.43,
+  "palet": "avrupa",
+  "nokta": {
+   "douaumont": [
+    640.0,
+    -1313.6
+   ],
+   "vaux": [
+    2916.5,
+    500.9
+   ],
+   "kasaba": [
+    -3149.3,
+    5131.9
+   ]
+  }
+ },
+ "paris": {
+  "n": 651,
+  "adim": 8,
+  "yari": 2600,
+  "taban": 22,
+  "olcek": 0.25,
+  "enAz": 23.9,
+  "enCok": 132.1,
+  "png": "paris",
+  "ad": "Paris",
+  "lat": 48.87,
+  "lon": 2.348,
+  "palet": "metropol",
+  "nokta": {
+   "republique": [
+    1171.6,
+    278.3
+   ],
+   "montmartre": [
+    -644.4,
+    -1725.5
+   ],
+   "pontneuf": [
+    -446.7,
+    1358.1
+   ],
+   "gareest": [
+    820.1,
+    -757.0
+   ]
+  }
+ },
+ "kaliningrad": {
+  "n": 641,
+  "adim": 10,
+  "yari": 3200,
+  "taban": -7,
+  "olcek": 0.25,
+  "enAz": -5.4,
+  "enCok": 31.8,
+  "png": "kaliningrad",
+  "ad": "Kaliningrad",
+  "lat": 54.7101,
+  "lon": 20.5106,
+  "palet": "avrupa",
+  "nokta": {
+   "merkez": [
+    0.0,
+    -0.0
+   ]
+  }
+ },
+ "frankfurt": {
+  "n": 451,
+  "adim": 8,
+  "yari": 1800,
+  "taban": 90,
+  "olcek": 0.25,
+  "enAz": 92.0,
+  "enCok": 138.7,
+  "png": "frankfurt",
+  "ad": "Frankfurt",
+  "lat": 50.1112,
+  "lon": 8.6744,
+  "palet": "metropol",
+  "nokta": {
+   "kule": [
+    0.0,
+    -0.0
+   ]
+  }
+ },
+ "munih": {
+  "n": 451,
+  "adim": 8,
+  "yari": 1800,
+  "taban": 497,
+  "olcek": 0.25,
+  "enAz": 498.7,
+  "enCok": 538.4,
+  "png": "munih",
+  "ad": "Münih",
+  "lat": 48.1441,
+  "lon": 11.58,
+  "palet": "metropol",
+  "nokta": {
+   "konut": [
+    230.3,
+    -0.0
+   ],
+   "odeon": [
+    -274.8,
+    144.7
+   ]
+  }
+ },
+ "alpler": {
+  "n": 734,
+  "adim": 15,
+  "yari": 5500,
+  "taban": 680,
+  "olcek": 0.25,
+  "enAz": 681.9,
+  "enCok": 2951.6,
+  "png": "alpler",
+  "ad": "Garmisch – Zugspitze",
+  "lat": 47.456,
+  "lon": 11.035,
+  "palet": "dag",
+  "nokta": {
+   "garmisch": [
+    4614.0,
+    -4052.0
+   ],
+   "zugspitze": [
+    -3665.6,
+    3873.9
+   ]
+  }
+ },
+ "bolu": {
+  "n": 601,
+  "adim": 10,
+  "yari": 3000,
+  "taban": 961,
+  "olcek": 0.25,
+  "enAz": 962.5,
+  "enCok": 1738.4,
+  "png": "bolu",
+  "ad": "Bolu",
+  "lat": 40.64,
+  "lon": 31.638,
+  "palet": "avrupa",
+  "nokta": {
+   "golcuk": [
+    -692.7,
+    -1814.5
+   ],
+   "sehir": [
+    675.8,
+    2092.8
+   ]
+  }
  }
 }
