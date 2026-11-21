@@ -419,43 +419,80 @@
   }
  },
  "berlin": {
-  "n": 601,
-  "adim": 8,
-  "yari": 2400,
-  "taban": 22,
-  "olcek": 0.25,
-  "enAz": 23.7,
-  "enCok": 59.8,
+  "n": 1701,
+  "adim": 2.0,
+  "yari": 1700.0,
+  "taban": -10.0,
+  "olcek": 0.01,
+  "enAz": -2.2,
+  "enCok": 1.1,
+  "sifir": 0,
   "png": "berlin",
   "ad": "Berlin",
-  "lat": 52.5135,
-  "lon": 13.366,
   "palet": "metropol",
   "nokta": {
-   "kanzleramt": [
-    210.0,
-    -745.8
+   "moabit": [
+    -760.0,
+    -470.0
    ],
-   "bendlerblock": [
-    -345.5,
-    712.4
+   "hauptbahnhof": [
+    60.0,
+    -500.0
+   ],
+   "kanzleramt": [
+    -200.0,
+    -345.0
+   ],
+   "platz": [
+    50.0,
+    -200.0
    ],
    "reichstag": [
-    684.2,
-    -578.9
+    198.0,
+    -203.0
    ],
    "ard": [
-    1023.0,
-    -590.0
+    515.0,
+    -268.0
+   ],
+   "brandenburg": [
+    330.0,
+    60.0
    ],
    "siegessaule": [
-    -1077.2,
-    -111.3
+    -380.0,
+    60.0
    ],
-   "moabit": [
-    -1083.9,
-    -1168.9
+   "tiergarten": [
+    -395.0,
+    240.0
+   ],
+   "bendlerblock": [
+    -155.0,
+    463.0
+   ],
+   "landwehr": [
+    -395.0,
+    556.0
+   ],
+   "holokost": [
+    390.0,
+    260.0
+   ],
+   "potsdamer": [
+    420.0,
+    500.0
    ]
+  },
+  "blender": {
+   "glb": "assets/hikaye/berlin.glb",
+   "sinir": [
+    -1700.0,
+    -1700.0,
+    1700.0,
+    1700.0
+   ],
+   "oyun": 1150
   }
  },
  "saar": {
